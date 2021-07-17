@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node server",
-    "server":"nodemon server"
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
+  "proxy": "http://localhost:5000/",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,6 +17,7 @@
     "bcryptjs": "^2.4.3",
     "concurrently": "^6.2.0",
     "config": "^3.3.6",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-validator": "^6.11.1",
     "gravatar": "^1.8.1",

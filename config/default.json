@@ -1,0 +1,6 @@
+{
+    "mongoURI":"mongodb+srv://parth:chidia123@cluster0.gljjd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtsecret":"mysecrettoken",
+    "githubClientId":"c1e7eebe83bb52f94a7c",
+    "githubSecret":"febfcec01dcf22eb2ef51748715cfb187b24b84e"
+}
