@@ -102,7 +102,7 @@ export const getProfileById=(user_id)=>async dispatch=>{
 
     try {
 
-        const res=await axios.get(`http://localhost:5000/api/profile/user/${user_id}`);
+        const res=await axios.get(`api/profile/user/${user_id}`);
 
         dispatch({
             type:GET_PROFILE,
@@ -191,7 +191,7 @@ export const addEducation=(formData,history)=>async dispatch=>{
             }
         }
 
-        const res=await axios.put('http://localhost:5000/api/profile/education',formData,config);
+        const res=await axios.put('api/profile/education',formData,config);
         dispatch({
             type:UPDATE_PROFILE,
             payload:res.data
